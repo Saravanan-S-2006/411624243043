@@ -12,12 +12,17 @@ body{
 img{
     height: 500px;
     width: 500px;
-    border-radius: 500px;
+    /*border-radius: 500px;*/
+}
+@media(max-width:600px){
+    img{
+        height:auto;
+        width:100%;
+    }
 }
 
 video{
-    height:500px;
-    width:500px;
+    width:100%;
 }
 
 ol{
@@ -54,6 +59,13 @@ nav{
     display: flex;
     flex-direction:row;
     gap:50px;
+    
+}
+@media(max-width:600px){
+    nav{
+        display:flex;
+        flex-direction:column;
+    }
 }
 
 #p1{
@@ -70,7 +82,12 @@ nav{
 
 .grid{
     display:grid;
-    grid-template-columns: 33% 33% 33%;
+}
+@media (min-width:1024px){
+    .grid{
+        display:grid;
+        grid-template-columns: 33% 33% 33%;
+    }
 }
 
 /* #one{
